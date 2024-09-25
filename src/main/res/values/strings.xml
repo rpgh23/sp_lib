@@ -1,0 +1,5 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Tutors</string>
+    <string name="facebook_client_token">14c97942199addebb8c945a7c8c69686</string>
+    <string name="facebook_app_id">723322277736582</string>
+</resources>

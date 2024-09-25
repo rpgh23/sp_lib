@@ -1,0 +1,46 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    compileSdkVersion 33
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+           // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+        }
+    }
+}
+repositories {
+    jcenter()
+    mavenLocal()
+    maven {
+        mavenCentral()
+        url "https://jitpack.io"
+    }
+    maven { url 'https://maven.fabric.io/public' }
+
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation ('com.google.android.material:material:1.6.0') {
+        version {
+            strictly '1.6.0'
+        }
+    }
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.salespandadm.app:flutter_debug:1.0'
+    implementation 'com.salespandadm.app:flutter_release:1.0'
+   // api 'com.facebook.android:facebook-android-sdk:15.1.0'
+
+}
